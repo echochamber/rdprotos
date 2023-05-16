@@ -35,11 +35,11 @@ service GreeterService {
 }
 
 // The request message containing the user's name.
-message HelloRequest {
+message SayHelloRequest {
   string name = 1;
 }
 
 // The response message containing the greetings
-message HelloReply {
+message SayHelloResponse {
   string message = 1;
 }
