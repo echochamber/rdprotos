@@ -2,3 +2,5 @@
 **/*.rs.bk
 # Generated code
 src/gen/
+
+gen/

@@ -20,6 +20,7 @@ option java_outer_classname = "HelloWorldProto";
 option go_package = "github.com/echochamber/rdprotos/gen/go/your/service/v1";
 
 import "google/api/annotations.proto";
+// import "google/api/doesnotexist.proto";
 
 package echochamber.helloworld.v1;
 

@@ -7,3 +7,5 @@ lint:
     - DEFAULT
 deps:
   - buf.build/googleapis/googleapis
+  # So that export includes WKTs that are imported by other protos.
+  # - buf.build/protocolbuffers/wellknowntypes

@@ -25,7 +25,6 @@ fn ensure_crate(crate_name: &str) {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    println!("Hello");
     ensure_crate("protoc-gen-prost-crate");
 
     // Use buf tool to generate prost and tonic stubs.
@@ -33,7 +32,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let status = Command::new("buf")
         .arg("generate")
         .arg(".")
-        .arg("--include-imports=1")
+        .arg("--include-imports")
         .current_dir(env!("CARGO_MANIFEST_DIR"))
         .status()
         .unwrap();

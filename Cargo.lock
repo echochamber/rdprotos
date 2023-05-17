@@ -124,6 +124,7 @@ dependencies = [
  "pbjson-types",
  "prost",
  "prost-types",
+ "protoc-wkt",
  "serde",
  "tonic",
 ]
@@ -629,6 +630,12 @@ checksum = "213622a1460818959ac1181aaeb2dc9c7f63df720db7d788b3e24eacd1983e13"
 dependencies = [
  "prost",
 ]
+
+[[package]]
+name = "protoc-wkt"
+version = "1.0.0+3.20.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ae1d0fdc23ea945d58449259496ba12d3b520da1a45ce5011f631c990add9029"
 
 [[package]]
 name = "quote"
