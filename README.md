@@ -9,3 +9,4 @@ Uses:
   - Running prost-build and tonic-build
     - Generates boilerplate for importing a client.
     - Generates boilerplate to implement a server.
+* Also has grpc http + json -> grpc gateway implementation https://github.com/grpc-ecosystem/grpc-gateway
