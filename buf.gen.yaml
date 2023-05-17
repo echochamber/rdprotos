@@ -1,8 +1,6 @@
 version: v1
 managed:
   enabled: true
-  go_package_prefix:
-    default: github.com/echochamber/rdprotos/gen
 plugins:
   - plugin: buf.build/community/neoeinstein-prost
     out: src/gen
@@ -12,6 +10,9 @@ plugins:
       - file_descriptor_set
   - plugin: buf.build/community/neoeinstein-tonic
     out: src/gen
+    opt:
+      - compile_well_known_types
+      - extern_path=.google.protobuf=::pbjson_types
   - name: prost-crate
     out: .
     strategy: all

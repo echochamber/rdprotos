@@ -117,7 +117,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "echochamber-rdproto"
+name = "echochamber_rdproto"
 version = "0.1.0"
 dependencies = [
  "pbjson",
