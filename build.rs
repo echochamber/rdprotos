@@ -33,7 +33,6 @@ fn main() -> Result<(), Box<dyn Error>> {
         .arg("generate")
         .arg(".")
         .arg("--include-imports")
-        .arg("--template=./buf-rustonly.gen.yaml")
         .current_dir(env!("CARGO_MANIFEST_DIR"))
         .status()
         .unwrap();

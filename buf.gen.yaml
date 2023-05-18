@@ -19,17 +19,3 @@ plugins:
     opt:
       - include_file=src/gen/mod.rs
       - gen_crate
-  - plugin: go
-    out: grpc-gateway/gen/go
-    opt:
-      - paths=source_relative
-  - plugin: go-grpc
-    out: grpc-gateway/gen/go
-    opt:
-      - paths=source_relative
-  - plugin: grpc-gateway
-    out: grpc-gateway/gen/go
-    opt:
-      - paths=source_relative
-  - plugin: openapiv2
-    out: grpc-gateway/gen/openapiv2
